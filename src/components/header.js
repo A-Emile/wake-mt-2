@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <header className="h-20 px-10 flex items-center">
-    <div className="text-2xl flex-grow font-semibold">WAKE<font className="font-thin">TOOLS</font></div>
+    <Link to="/" className="text-2xl flex-grow font-semibold">WAKE<font className="font-thin">TOOLS</font></Link>
     <div className="flex gap-8 font-semibold">
       <NavLink to="/">Home</NavLink>
       <NavLink to="/shop">Shop</NavLink>

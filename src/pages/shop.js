@@ -1,17 +1,22 @@
 import * as React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const SecondPage = () => (
+const ShopPage = () => (
   <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Seo title="Home" />
+    <div className="mt-40 ml-60">
+      <h1 className="text-7xl font-bold font-mono">Shop</h1>
+      <p className="opacity-90 mt-5 max-w-sm text-lg">This is the shopping page</p>
+      </div>
   </Layout>
 )
 
-export const Head = () => <Seo title="Page two" />
+/**
+ * Head export to define metadata for the page
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+ */
+export const Head = () => <Seo title="Home" />
 
-export default SecondPage
+export default ShopPage

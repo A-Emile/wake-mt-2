@@ -1,11 +1,7 @@
-import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +12,7 @@ const IndexPage = () => (
         The industry's strongest and most <font className="text-fuchsia-500 font-bold">beautiful </font>
         Wakeboard Mount. At 4.5" in length its one of the compactest and fits everywhere. It even looks great without a board.
       </p>
-      <button className="uppercase text-lg font-semibold border p-5 px-10 hover:bg-opacity-10 bg-opacity-0  hover:text-fuchsia-500 hover:border-fuchsia-500 transition-all active:translate-y-[2px]">Buy Now</button>
+      <Link to="/shop/wakemount" className="uppercase text-lg font-semibold border p-5 px-10 hover:bg-opacity-10 bg-opacity-0  hover:text-fuchsia-500 hover:border-fuchsia-500 transition-all active:translate-y-[2px]">Buy Now</Link>
     </div>
   </Layout>
 )
